@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { GameComponent } from './components/game/game.component';
 import { ButtonGameDirective } from './shared/directives/button-game.directive';
 import { ValidatedGameDirective } from './shared/directives/validated-game.directive';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogValidatedGameComponent } from './shared/directives/components/dialog-validated-game/dialog-validated-game.component';
 import {MatButtonModule} from '@angular/material/button';
@@ -19,9 +19,10 @@ import {MatButtonModule} from '@angular/material/button';
     DialogValidatedGameComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule,
+    NoopAnimationsModule,
     MatDialogModule,
     MatButtonModule
   ],

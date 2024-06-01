@@ -1,29 +1,61 @@
 .container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #f5f5f5;
     width: 100%;
     height: 100%;
     padding-top: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease; /* Adicionando animação de entrada */
 }
 
-.mensage {
-  
+.message {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.div-button {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    padding: 30px;
-}
-span {
-    font-size: larger;
+.message span {
+    font-size: 24px;
     font-weight: 400;
+}
+
+.message span.game-option {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Definindo a animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

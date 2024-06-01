@@ -14,7 +14,7 @@ export class ButtonGameDirective implements AfterViewInit {
   };
   private opO: Opiton = {
     texButon: 'O',
-    colorTextButton: 'green'
+    colorTextButton: 'blue'
   };
 
   ngAfterViewInit() {

@@ -1,17 +1,17 @@
-<div class="container">
-    <div class="mensage">
+<div class="container" [@dialogAnimation]>
+    <div class="message">
         <span>
             {{mensagem}}
-            <span *ngIf="!velha" [style]="color">
+            <span *ngIf="!velha" [style.color]="color" class="game-option">
                 {{gameOption}}
             </span>
             !
         </span>
         <span *ngIf="!velha">
-            Você venceu!
+            Parabéns, você venceu!
         </span>
     </div>
-    <div class="div-button">
+    <div class="button-container">
         <button mat-flat-button color="accent" (click)="onClose()">Recomeçar</button>
     </div>
 </div>
