@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="mensage">
+        <span>
+            {{mensagem}}
+            <span *ngIf="!velha" [style]="color">
+                {{gameOption}}
+            </span>
+            !
+        </span>
+        <span *ngIf="!velha">
+            Você venceu!
+        </span>
+    </div>
+    <div class="div-button">
+        <button mat-flat-button color="accent" (click)="onClose()">Recomeçar</button>
+    </div>
+</div>
